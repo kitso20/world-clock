@@ -18,6 +18,9 @@ SKtime.innerHTML = SKlocal.format(`h:mm:ss [<small>]A[</small>]`)
 function changecity(event){
     let cities = document.querySelector(`#cities`)
     let zone = event.target.value
+    if (zone === "current"){
+        zone = moment.tz.guess()
+    }
     let newCity = zone.replace("_"," ").split("/")[1]
     let newDate = moment.tz(zone).format(`Do MMMM YYYY`)
     let newtime = moment.tz(zone).format(`h:mm:ss [<small>]A[</small>]`)
