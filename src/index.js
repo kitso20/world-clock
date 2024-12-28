@@ -28,7 +28,8 @@ function changecity(event){
     <div><h2>${newCity}</h2>
     <div class="date">${newDate}</div></div>
     <div class="time">${newtime}</div>
-    </div>`
+    </div>
+    <a href="/">Home</a>`
 
 }
 
