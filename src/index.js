@@ -26,7 +26,7 @@ function changecity(event){
     <div class="date">${newDate}</div></div>
     <div class="time">${newtime}</div>
     </div>`
-    
+
 }
 
 setInterval(updateTime,1000)
